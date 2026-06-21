@@ -2,7 +2,7 @@
   "extends": "@finos/tsconfig/nest.json",
   "compilerOptions": {
     "rootDir": "src",
-    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     }
