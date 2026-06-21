@@ -2,6 +2,7 @@
   "extends": "@finos/tsconfig/nest.json",
   "compilerOptions": {
     "rootDir": "src",
+    "outDir": "dist",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
