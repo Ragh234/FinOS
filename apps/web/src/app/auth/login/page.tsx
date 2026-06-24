@@ -22,15 +22,9 @@ export default function LoginPage() {
   const form = useForm<LoginValues>({ resolver: zodResolver(loginSchema), defaultValues: { email: "", password: "" } });
   const mutation = useMutation({
     mutationFn: (values: LoginValues) => apiRequest<{ accessToken: string; refreshToken: string }>("/auth/login", { method: "POST", body: JSON.stringify(values) }),
-    onSuccess: async (tokens) => {
-      setTokens(tokens);
-      const companies = await api.get<Array<{ id: string }>>("/companies");
-      if (companies[0]) {
-        setCompanyId(companies[0].id);
-        router.push("/dashboard");
-        return;
-      }
-      router.push("/setup/company");
+      onSuccess: (tokens) => {
+        setTokens(tokens);
+        router.push("/setup/company");
     }
   });
 
