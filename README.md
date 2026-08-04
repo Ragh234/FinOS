@@ -71,20 +71,6 @@ FinOS uses a modular backend, a typed frontend, tenant-scoped data access, durab
 | Reliability | Transactional outbox, idempotency keys, audit logs |
 | Deployment | Docker Compose, Railway-ready API, Vercel-ready web app |
 
-## Screenshots
-
-Add production screenshots here before publishing the portfolio:
-
-- Login and company setup
-- Executive dashboard
-- Customer management
-- Product and inventory management
-- Invoice and payment workflows
-- Collections workspace
-- Credit command center
-- Banking reconciliation
-- AI CFO
-
 ## Demo Accounts
 
 Seeded demo tenants use:
