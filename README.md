@@ -133,11 +133,8 @@ The web app runs on `http://localhost:3000` and the API runs on the configured A
 
 ## Deployment Instructions
 
-FinOS can be deployed with Docker Compose, Railway, Vercel, managed PostgreSQL, and managed Redis.
+FinOS is deployed with Docker Compose, Railway, Vercel, managed PostgreSQL, and managed Redis.
 
-Read the full deployment guide:
-
-- [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md)
 
 ## Documentation
 
